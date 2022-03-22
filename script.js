@@ -43,3 +43,23 @@ if (playerSelection === "scissors"){
     }
  }
  } 
+
+ playerScore = parseInt(0)
+ computerScore = parseInt(0)
+ 
+ function game(){
+    for (let i = 1; i <= 5; i++){
+let playerSelection = prompt("Let's play rock paper scissors! ");
+   const computerSelection = computerPlay();
+    console.log(playRound(playerSelection,computerSelection));
+    console.log(`Player score = `+ playerScore);
+    console.log(`Computer score = `+ computerScore);
+ }
+}
+
+
+game();
+
+
+
+
